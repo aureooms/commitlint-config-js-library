@@ -23,9 +23,6 @@
   "scripts": {
     "release": "np"
   },
-  "dependencies": {
-    "@commitlint/config-conventional": "12.0.1"
-  },
   "devDependencies": {
     "np": "7.4.0"
   }

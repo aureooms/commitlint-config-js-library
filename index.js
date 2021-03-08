@@ -11,24 +11,25 @@
  */
 
 module.exports = {
-	extends: ['@commitlint/config-conventional'],
 	parserPreset: {
 		parserOpts: {
-			headerPattern: /^:[a-z_]*: (\w*)(?:\((.*)\))?!?: (.*)$/,
-			breakingHeaderPattern: /^:boom: (\w*)(?:\((.*)\))?!: (.*)$/,
+			headerPattern: /^:[a-z_]+: (\w+)(?:\((.+)\))?!?: (.+)$/,
+			breakingHeaderPattern: /^:boom: (\w+)(?:\((.+)\))?!: (.+)$/,
 			headerCorrespondence: [
 			  'type',
 			  'scope',
 			  'subject'
 			],
 			noteKeywords: ['BREAKING CHANGE'],
-			revertPattern: /^:wastebasket: (?:revert:)\s"?([\s\S]+?)"?\s*This reverts commit (\w*)\./i,
+			revertPattern: /^:wastebasket: (?:revert:)\s"?([\s\S]+?)"?\s*This reverts commit (\w+)\./i,
 			revertCorrespondence: ['header', 'hash'],
 			issuePrefixes: ['#']
 		}
 	},
 	rules: {
 		'header-max-length': [2, 'always', 79],
+		'body-max-line-length': [2, 'always', 79],
+		'footer-max-line-length': [2, 'always', 79],
 		'type-empty': [2, 'never'],
 		'type-case': [2, 'always', 'lower-case'],
 		'type-enum': [2, 'always',
@@ -63,12 +64,12 @@ module.exports = {
 			]
 		],
 		'scope-case': [0, 'always', 'lower-case'],
-		'subject-case': [2, 'always', 'sentence-case'],
 		'subject-empty': [2, 'never'],
+		'subject-case': [2, 'always', 'sentence-case'],
 		'subject-full-stop': [2, 'always', '.'],
-		'body-full-stop': [2, 'always', '.'],
 		'body-leading-blank': [2, 'always'],
 		'body-empty': [0, 'never'],
+		'body-full-stop': [2, 'always', '.'],
 		'footer-leading-blank': [2, 'always']
 	}
 };
