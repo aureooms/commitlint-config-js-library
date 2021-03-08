@@ -21,7 +21,7 @@
     "index.js"
   ],
   "scripts": {
-    "release": "np"
+    "release": "np --message ':hatching_chick: release: v%s'"
   },
   "devDependencies": {
     "np": "7.4.0"
