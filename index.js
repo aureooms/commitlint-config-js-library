@@ -13,7 +13,7 @@
 module.exports = {
 	parserPreset: {
 		parserOpts: {
-			headerPattern: /^:[a-z_]+: (\w+)(?:\((.+)\))?!?: (.+)$/,
+			headerPattern: /^:[a-z0-9_]+: (\w+)(?:\((.+)\))?!?: (.+)$/,
 			breakingHeaderPattern: /^:boom: (\w+)(?:\((.+)\))?!: (.+)$/,
 			headerCorrespondence: [
 			  'type',
