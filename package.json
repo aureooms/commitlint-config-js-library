@@ -1,7 +1,7 @@
 {
   "name": "@js-library/commitlint-config",
   "description": "Shareable commitlint config for js-library packages",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "AGPL-3.0",
   "author": "aureooms",
   "homepage": "https://github.com/aureooms/commitlint-config-js-library#readme",
