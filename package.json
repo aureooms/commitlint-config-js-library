@@ -3,14 +3,14 @@
   "description": "Shareable commitlint config for js-library packages",
   "version": "0.0.4",
   "license": "AGPL-3.0",
-  "author": "aureooms",
-  "homepage": "https://github.com/aureooms/commitlint-config-js-library#readme",
+  "author": "make-github-pseudonymous-again",
+  "homepage": "https://github.com/make-github-pseudonymous-again/commitlint-config-js-library#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aureooms/commitlint-config-js-library.git"
+    "url": "https://github.com/make-github-pseudonymous-again/commitlint-config-js-library.git"
   },
   "bugs": {
-    "url": "https://github.com/aureooms/commitlint-config-js-library/issues"
+    "url": "https://github.com/make-github-pseudonymous-again/commitlint-config-js-library/issues"
   },
   "keywords": [
     "conventional-changelog",
